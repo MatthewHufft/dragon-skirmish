@@ -73,10 +73,10 @@ export default new Vuex.Store({
       router.push({name: "Fight", params: {gameId: res.data.id}})
       console.log(res)
       commit("setFight",res.data)
-    }
-async getDragonById({commit})
-  },
+    },
+async getDragonById({commit}){
 
-  modules: {
   }
+  
+}
 })
