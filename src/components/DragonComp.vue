@@ -1,6 +1,6 @@
 <template>
   <div class="card" @click="setActiveDragon" >
-    <img class="card-img-top" width="50px" :src="dragonProp.imgUrl">
+    <img class="card-img-top" :src="dragonProp.imgUrl">
     <div class="card-body">
       <h4 class="card-title">{{dragonProp.name}}</h4>
       <p class="card-text"></p>
@@ -27,6 +27,10 @@ setActiveDragon(){
 }
 </script>
 
-<style>
+<style scoped>
+
+  .card {
+    max-width: 25vw;
+  }
 
 </style>

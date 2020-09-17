@@ -4,9 +4,7 @@
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
     </div>
-    <main class="container-fluid">
       <router-view/>
-    </main>
   </div>
 </template>
 
@@ -35,7 +33,6 @@
 }
 
 main{
-  height: 100vh;
   background-color: black;
   flex-grow: 1;
 }

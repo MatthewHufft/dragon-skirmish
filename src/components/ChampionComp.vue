@@ -1,6 +1,6 @@
 <template>
-  <div class="card" >
-    <img class="card-img-top" width="50px" :src="championProp.imgUrl">
+  <div class="card" @click="setActiveChampion" >
+    <img class="card-img-top img-fluid" :src="championProp.imgUrl">
     <div class="card-body">
       <h4 class="card-title">{{championProp.name}}</h4>
       <p class="card-text"></p>
@@ -19,12 +19,17 @@ export default {
   },
 
   methods:{
-
+    setActiveChampion(){
+    this.$store.dispatch("setActiveChampion",this.championProp._id)
+}
   },
 
 }
 </script>
 
-<style>
-
+<style scoped>
+.card {
+    max-width: 25vw;
+    min-height: 25vh;
+  }
 </style>
